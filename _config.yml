@@ -9,8 +9,7 @@
 title: TyLauncher
 email: luckytianyiyan@gmail.com
 description: 'A file quick launch tool.'
-baseurl: "" # the subpath of your site, e.g. /blog
-# url: "http://tylauncher.com" # the base hostname & protocol for your site
+baseurl: 'http://tylauncher.com'
 twitter_username: luckytianyiyan
 github_username:  luckytianyiyan
 blog: "http://blog.tianyiyan.com"
