@@ -1,5 +1,4 @@
-tylauncher.com
-===
+![TyLauncher-logo](https://raw.githubusercontent.com/luckytianyiyan/tylauncher.com/gh-pages/README_RES/tylauncher-logo.png)
 [![GitHub License](https://img.shields.io/github/license/luckytianyiyan/tylauncher.com.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 The [website](http://www.tylauncher.com) for [TyLauncher](https://github.com/luckytianyiyan/TyLauncher).
