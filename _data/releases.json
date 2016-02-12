@@ -1,0 +1,36 @@
+[
+  {
+    "url": "https://api.github.com/repos/luckytianyiyan/TyLauncher/releases/2566261",
+    "assets_url": "https://api.github.com/repos/luckytianyiyan/TyLauncher/releases/2566261/assets",
+    "upload_url": "https://uploads.github.com/repos/luckytianyiyan/TyLauncher/releases/2566261/assets{?name,label}",
+    "html_url": "https://github.com/luckytianyiyan/TyLauncher/releases/tag/v2.2.0.0",
+    "id": 2566261,
+    "tag_name": "v2.2.0.0",
+    "target_commitish": "master",
+    "name": "",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2016-02-05T11:55:39Z",
+    "published_at": "2016-02-06T17:07:10Z",
+    "tarball_url": "https://api.github.com/repos/luckytianyiyan/TyLauncher/tarball/v2.2.0.0",
+    "zipball_url": "https://api.github.com/repos/luckytianyiyan/TyLauncher/zipball/v2.2.0.0",
+    "body": "CHANGELOG\r\n===\r\n#### Bug fixes\r\n1. \"Save As\" abnormal program exit\r\n\r\n#### New features\r\n1. The new logo (Designed by **joekele7@gmail.com**)\r\n2. Automatically adjust the size of the Application Window according to the size of the screen\r\n3. Add \"Report Bug / Request a New Feature\" menu\r\n4. Add \"One Light\" Theme\r\n\r\n#### Enhancements\r\n1. **more better theme - \"One Dark\"**\r\n2. backup file using \"json\" suffix\r\n\r\n#### Download Installer from sourceforge.net\r\n\r\n[TyLauncherInstaller_v2.2.0.0_win32.exe](http://sourceforge.net/projects/tylauncher/files/2.2.0.0/TyLauncherInstaller_v2.2.0.0_win32.exe/download)\r\n\r\n[TyLauncherInstaller_v2.2.0.0_x64.exe](http://sourceforge.net/projects/tylauncher/files/2.2.0.0/TyLauncherInstaller_v2.2.0.0_x64.exe/download)"
+  },
+  {
+    "url": "https://api.github.com/repos/luckytianyiyan/TyLauncher/releases/2364548",
+    "assets_url": "https://api.github.com/repos/luckytianyiyan/TyLauncher/releases/2364548/assets",
+    "upload_url": "https://uploads.github.com/repos/luckytianyiyan/TyLauncher/releases/2364548/assets{?name,label}",
+    "html_url": "https://github.com/luckytianyiyan/TyLauncher/releases/tag/v2.1.0.0",
+    "id": 2364548,
+    "tag_name": "v2.1.0.0",
+    "target_commitish": "master",
+    "name": "",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2016-01-03T13:47:38Z",
+    "published_at": "2016-01-03T08:37:58Z",
+    "tarball_url": "https://api.github.com/repos/luckytianyiyan/TyLauncher/tarball/v2.1.0.0",
+    "zipball_url": "https://api.github.com/repos/luckytianyiyan/TyLauncher/zipball/v2.1.0.0",
+    "body": "#### Download Installer from sourceforge.net\r\n\r\n[TyLauncherInstaller_v2.1.0.0_i386.exe](http://sourceforge.net/projects/tylauncher/files/2.1.0.0/TyLauncherInstaller_v2.1.0.0_i386.exe/download)\r\n[TyLauncherInstaller_v2.1.0.0_x86_64.exe](http://sourceforge.net/projects/tylauncher/files/2.1.0.0/TyLauncherInstaller_v2.1.0.0_x86_64.exe/download)"
+  }
+]
