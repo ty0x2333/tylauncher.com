@@ -191,3 +191,50 @@ footer {
     text-align: center;
   }
 }
+
+/* Releases
+   ------------------------------------------ */
+
+.page-template h1 {
+  font-weight: 300;
+  font-size: 4em;
+}
+
+.jump-to-release {
+  text-align: center;
+  background: #A5ECFA;
+}
+.jump-to-release.is-compact {
+  padding: 2rem 0;
+}
+.jump-to-release.is-compact h1 {
+  font-size: 1.8em;
+  margin-bottom: 0.2em;
+}
+@media (min-width: 1000px) {
+  .jump-to-release.is-compact h1 {
+    display: inline-block;
+    margin: 0 2rem 0 0;
+  }
+}
+.jump-to-release .electron-icon {
+  height: 1.5em;
+  margin-right: 0.4em;
+  margin-top: -0.4em;
+  vertical-align: middle;
+}
+
+.releases {
+  background-color: #FAF7F3;
+}
+
+.releases h3 em {
+  font-style: normal;
+  font-size: .5em;
+  font-weight: 300;
+  color: #76C7D7;
+}
+
+.jump-to-item + .jump-to-item::before {
+  content: '○ ';
+}
