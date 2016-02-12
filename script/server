@@ -3,6 +3,4 @@
 #
 # Run the jekyll server
 
-cd ..
-
 bundle exec jekyll serve --baseurl '' --watch
