@@ -1,0 +1,71 @@
+<script>
+function detectOS() {
+    var sUserAgent = navigator.userAgent;
+
+    var isWin = (navigator.platform === "Win32") || (navigator.platform === "Windows");
+    var isMac = (navigator.platform === "Mac68K") || (navigator.platform === "MacPPC") || (navigator.platform === "Macintosh") || (navigator.platform === "MacIntel");
+    var isIpad = sUserAgent.match(/ipad/i) === "ipad";
+    // var isIphoneOS = sUserAgent.match(/iphone os/i) === "iphone os";
+    var isUnix = (navigator.platform === "X11") && !isWin && !isMac;
+    var isLinux = (String(navigator.platform).indexOf("Linux") > -1);
+    var isAndroid = sUserAgent.toLowerCase().match(/android/i) === "android";
+    var isCE = sUserAgent.match(/windows ce/i) === "windows ce";
+    var isWM = sUserAgent.match(/windows mobile/i) === "windows mobile";
+    if (isMac) {
+        return "Mac";
+    }
+    if (isUnix) {
+        return "Unix";
+    }
+    if (isLinux) {
+        if (isAndroid) {
+            return "Android";
+        } else {
+            return "Linux";
+        }
+    }
+    if (isCE || isWM) {
+        return 'wm';
+    }
+
+    if (isWin) {
+        var isWin2K = sUserAgent.indexOf("Windows NT 5.0") > -1 || sUserAgent.indexOf("Windows 2000") > -1;
+        if (isWin2K) {
+            return "Win2000";
+        }
+        var isWinXP = sUserAgent.indexOf("Windows NT 5.1") > -1 || sUserAgent.indexOf("Windows XP") > -1;
+        if (isWinXP) {
+            return "WinXP";
+        }
+        var isWin2003 = sUserAgent.indexOf("Windows NT 5.2") > -1 || sUserAgent.indexOf("Windows 2003") > -1;
+        if (isWin2003) {
+            return "Win2003";
+        }
+        var isWinVista = sUserAgent.indexOf("Windows NT 6.0") > -1 || sUserAgent.indexOf("Windows Vista") > -1;
+        if (isWinVista) {
+            return "WinVista";
+        }
+        var isWin7 = sUserAgent.indexOf("Windows NT 6.1") > -1 || sUserAgent.indexOf("Windows 7") > -1;
+        if (isWin7) {
+            return "Win7";
+        }
+        var isWin8 = sUserAgent.indexOf("Windows NT 6.2") > -1 || sUserAgent.indexOf("Windows 8") > -1;
+        if (isWin8) {
+            return "Win8";
+        }
+        var isWin8_1 = sUserAgent.indexOf("Windows NT 6.3") > -1 || sUserAgent.indexOf("Windows 8.1") > -1;
+        if (isWin8_1) {
+            return "Win8.1";
+        }
+        var isWin10 = sUserAgent.indexOf("Windows NT 6.4") > -1 || sUserAgent.indexOf("Windows 10") > -1;
+        if (isWin10) {
+            return "Win10";
+        }
+    }
+    return "other";
+}
+function detectCPUClass() {
+   var agent = navigator.userAgent.toLowerCase();
+   return (agent.indexOf("win64") >= 0 || agent.indexOf("wow64") >= 0 || agent.indexOf("x86_64") >= 0) ? "x64" : "x86";
+}
+</script>

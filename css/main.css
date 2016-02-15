@@ -166,6 +166,23 @@ header a:hover {
   left: -1px;
 }
 
+/* Download */
+
+.download-button {
+  color: #FAF7F3;
+  background-color: #76C7D7;
+  font-size: 20px;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 50px;
+  border: 0;
+}
+
+.download-button:hover {
+  color: #FAF7F3;
+  background-color: #45828E;
+  text-decoration: none;
+}
 /* TyLauncher Does */
 
 .tylauncher-does img {

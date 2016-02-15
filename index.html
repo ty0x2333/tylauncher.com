@@ -8,10 +8,12 @@ layout: default
         <a class='tylauncher-word' href='/'>TyLauncher</a>
         <h3>{{ site.description }}</h3>
         <h5>Free open source file management tools. Made with <span class='mega-octicon octicon-heart'></span> by <a href='{{ site.github.owner_url }}'>{{ site.github.owner_name }}</a>.</h5>
-        <a href='{{ site.github.repository_url }}' target='_blank' title='Atom' class="button">
-          View on GitHub</a>
-        <a href='{{ site.github.releases_url }}' target='_blank' title='Atom' class="button">
-          Download {{ site.last_version }}</a>
+        <a id="download" href='{{ site.github.releases_url }}' target='_blank' title='TyLauncher' class="button download-button">
+          Download</a>
+        <h6 id="download-win32">For Windows 10/8.1/8/7/Vista 32-bit<br />
+          <a href='https://sourceforge.net/projects/tylauncher/files/{{ site.last_version }}/TyLauncherInstaller_{{ site.last_version }}_win32.exe/download'>Download for Windows 10/8.1/8/7/Vista 64-bit</a></h6>
+        <h6 id="download-win64">For Windows 10/8.1/8/7/Vista 64-bit<br />
+          <a href='https://sourceforge.net/projects/tylauncher/files/{{ site.last_version }}/TyLauncherInstaller_{{ site.last_version }}_x64.exe/download'>Download for Windows 10/8.1/8/7/Vista 32-bit</a></h6>
       </div>
     </div>
   </div>
@@ -75,3 +77,24 @@ layout: default
       </div>
     </div>
   </section>
+
+  {% include download.html %}
+  <script>
+  var os = detectOS();
+  var CPUClass = detectCPUClass();
+  var download_win32 = document.getElementById("download-win32");
+  var download_x64 = document.getElementById("download-win64");
+  var download_button = document.getElementById("download");
+  if (os === "WinVista" || os === "Win7" || os === "Win8" || os === "Win8.1" || os === "Win10") {
+    if (CPUClass === "x64") {
+      download_win32.style.display = "none";
+      download_button.href = download_x64.getElementsByTagName("a")[0].href;
+    } else {
+      download_x64.style.display = "none";
+      download_button.href = download_win32.getElementsByTagName("a")[0].href;
+    }
+  } else {
+    download_x64.style.display = "none";
+    download_button.href = download_win32.getElementsByTagName("a")[0].href;
+  }
+  </script>
