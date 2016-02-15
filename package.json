@@ -17,6 +17,7 @@
   "homepage": "http://www.tylauncher.com",
   "dependencies": {
     "tar-fs": "^1.5.0",
-    "request": "^2.55.0"
+    "request": "^2.55.0",
+    "yamljs": "^0.2.3"
   }
 }

@@ -2,6 +2,7 @@
 
 var fs = require('fs')
 var request = require('request')
+var yaml = require('yamljs')
 
 var options = {
   url: 'https://api.github.com/repos/luckytianyiyan/tylauncher/releases',
@@ -19,5 +20,12 @@ request(options, function (error, response, body) {
       delete release.author
     })
     fs.writeFileSync('_data/releases.json', JSON.stringify(body, null, 2))
+    updateConfig(body[0].tag_name)
   }
 })
+
+function updateConfig (last_version) {
+  var config = yaml.load('_config.yml')
+  config.last_version = last_version
+  fs.writeFileSync('_config.yml', yaml.stringify(config))
+}
