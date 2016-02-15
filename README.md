@@ -21,6 +21,21 @@ $ script/bootstrap
 $ script/server
 ```
 
+### CLI for Releases
+
+You'll need Node.js installed on your system in order to use the CLI. Then you can install the dependencies:
+```
+$ cd tylauncher.com
+$ npm install
+```
+
+#### Release Notes
+
+The most recent release notes from the luckytianyiyan/TyLauncher repository are made available on the site and can be updated by running:
+```
+$ script/releases
+```
+
 ### License
 
 `tylauncher.com` is available under the `MIT` license. See the LICENSE file for more info.
