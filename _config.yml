@@ -14,4 +14,4 @@ markdown: redcarpet
 redcarpet:
     extensions: [with_toc_data]
 highlighter: rouge
-last_version: v2.2.0.0
+last_version: 2.2.0.0

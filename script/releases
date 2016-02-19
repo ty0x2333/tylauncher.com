@@ -26,6 +26,6 @@ request(options, function (error, response, body) {
 
 function updateConfig (last_version) {
   var config = yaml.load('_config.yml')
-  config.last_version = last_version
+  config.last_version = last_version.substring(1)
   fs.writeFileSync('_config.yml', yaml.stringify(config))
 }

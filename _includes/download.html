@@ -57,7 +57,7 @@ function detectOS() {
         if (isWin8_1) {
             return "Win8.1";
         }
-        var isWin10 = sUserAgent.indexOf("Windows NT 6.4") > -1 || sUserAgent.indexOf("Windows 10") > -1;
+        var isWin10 = sUserAgent.indexOf("Windows NT 6.4") > -1 || sUserAgent.indexOf("Windows NT 10.0") > -1 || sUserAgent.indexOf("Windows 10") > -1;
         if (isWin10) {
             return "Win10";
         }
