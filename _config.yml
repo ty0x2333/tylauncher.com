@@ -17,3 +17,6 @@ last_version: 2.2.0.0
 
 permalink: /:title/
 languages: ["en", "cn"]
+
+gems:
+  - jekyll/multiple/languages/plugin
