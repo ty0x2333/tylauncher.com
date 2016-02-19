@@ -4,8 +4,15 @@
       <div class='row'>
         <div class='twelve columns text-right'>
           <ul class='navigation inline-list'>
-            <li><a href='{{ site.github.repository_url }}' target="_blank">Repository</a></li>
-            <li><a href='{{ site.blog }}' target="_blank">Blog</a></li>
+        {% if site.lang == "en" %}
+            {% capture link_chinese %}{{ site.baseurl_root }}/cn{{ page.url  }}{% endcapture %}
+            <li><a href='{{ link_chinese }}' target="_blank">{% t global.chinese %}</a></li>
+        {% else %}
+            {% capture link_english %}{{ site.baseurl_root }}{{ page.url  }}{% endcapture %}
+            <li><a href='{{ link_english }}' target="_blank">{% t global.english %}</a></li>
+        {% endif %}
+            <li><a href='{{ site.github.repository_url }}' target="_blank">{% t global.repository %}</a></li>
+            <li><a href='{{ site.blog }}' target="_blank">{% t global.blog %}</a></li>
           </ul>
         </div>
       </div>

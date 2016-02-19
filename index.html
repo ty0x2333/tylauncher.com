@@ -6,77 +6,19 @@ layout: default
     <div class='container'>
       <div class='twelve columns'>
         <a class='tylauncher-word' href='/'>TyLauncher</a>
-        <h3>{{ site.description }}</h3>
-        <h5>Free open source file management tools. Made with <span class='mega-octicon octicon-heart'></span> by <a href='{{ site.github.owner_url }}'>{{ site.github.owner_name }}</a>.</h5>
-        <a id="download" href='{{ site.github.releases_url }}' target='_blank' title='TyLauncher' class="button download-button">
-          Download</a>
-        <h6 id="download-win32">For Windows 10/8.1/8/7/Vista 32-bit<br />
-          <a href='https://sourceforge.net/projects/tylauncher/files/{{ site.last_version }}/TyLauncherInstaller_v{{ site.last_version }}_win32.exe/download'>Download for Windows 10/8.1/8/7/Vista 64-bit</a></h6>
-        <h6 id="download-win64">For Windows 10/8.1/8/7/Vista 64-bit<br />
-          <a href='https://sourceforge.net/projects/tylauncher/files/{{ site.last_version }}/TyLauncherInstaller_v{{ site.last_version }}_x64.exe/download'>Download for Windows 10/8.1/8/7/Vista 32-bit</a></h6>
+        <h3>{% t global.description %}</h3>
+        <h5>{% t global.sub-description_before %} <a href='{{ site.github.owner_url }}'>{{ site.github.owner_name }}</a> {% t global.sub-description_after %}</h5>
+        <a id="download" href='{{ site.github.releases_url }}' target='_blank' title='TyLauncher' class="button download-button">{% t global.download %}</a>
+        <h6 id="download-win32">{% t global.for-platform %} Windows 10/8.1/8/7/Vista 32-bit<br />
+          <a href='https://sourceforge.net/projects/tylauncher/files/{{ site.last_version }}/TyLauncherInstaller_v{{ site.last_version }}_win32.exe/download'>{% t global.download-for-platform %} Windows 10/8.1/8/7/Vista 64-bit</a></h6>
+        <h6 id="download-win64">{% t global.for-platform %} Windows 10/8.1/8/7/Vista 64-bit<br />
+          <a href='https://sourceforge.net/projects/tylauncher/files/{{ site.last_version }}/TyLauncherInstaller_v{{ site.last_version }}_x64.exe/download'>{% t global.download-for-platform %} Windows 10/8.1/8/7/Vista 32-bit</a></h6>
       </div>
     </div>
   </div>
 
-  <section class='tylauncher-does'>
-    <div class='container'>
-      <div class='row'>
-        <div class='four columns'>
-          <img src='../images/browser.png' width='150px'>
-          <h4>Multiple Tabs</h4>
-          <p>Support groups up to 300 files.</p>
-        </div>
-        <div class='four columns'>
-          <img src='../images/fork.png' width='99px'>
-          <h4>Open Source</h4>
-          <p>TyLauncher is open source.</p>
-        </div>
-        <div class='four columns'>
-          <img src='../images/quickly-set-up.png' width='150px'>
-          <h4>Quickly Set Up</h4>
-          <p>Support drag and drop to set the content.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="more-features">
-    <div class='container'>
-      <div class='row'>
-        <div class='twelve columns'>
-          <h3>More features</h3>
-        </div>
-      </div>
-
-      <div class='row features'>
-        <div class='two columns offset-by-one'>
-          <span class="mega-octicon octicon-rocket"></span>
-          <br/>
-          Global <br/>hotkeys
-        </div>
-        <div class='two columns'>
-          <span class="mega-octicon octicon-book"></span>
-          <br/>
-          Multiple <br/>language
-        </div>
-        <div class='two columns'>
-          <span class="mega-octicon octicon-device-desktop"></span>
-          <br/>
-          Multiple <br/>themes
-        </div>
-        <div class='two columns'>
-          <span class="mega-octicon octicon-tools"></span>
-          <br/>
-          Highly customized
-        </div>
-        <div class='two columns'>
-          <span class="mega-octicon octicon-gift"></span></span>
-          <br/>
-          Windows installers
-        </div>
-      </div>
-    </div>
-  </section>
+  {% translate_file main-features.html %}
+  {% translate_file more-features.html %}
 
   {% include download.html %}
   <script>

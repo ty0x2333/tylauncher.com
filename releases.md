@@ -1,5 +1,6 @@
 ---
 layout: releases
+permalink: /releases
 ---
 
 {% for release in site.data.releases %}

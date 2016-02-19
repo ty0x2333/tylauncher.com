@@ -1,6 +1,5 @@
 title: TyLauncher
 email: luckytianyiyan@gmail.com
-description: 'A file quick launch tool.'
 baseurl: 'http://www.tylauncher.com'
 twitter_username: luckytianyiyan
 github_username: luckytianyiyan
@@ -15,3 +14,6 @@ redcarpet:
     extensions: [with_toc_data]
 highlighter: rouge
 last_version: 2.2.0.0
+
+permalink: /:title/
+languages: ["en", "cn"]

@@ -82,7 +82,7 @@ section {
 }
 
 .hero, .built-on, .get-started,
-.tylauncher-does, .more-features {
+.main-features, .more-features {
   text-align: center;
 }
 
@@ -185,7 +185,7 @@ header a:hover {
 }
 /* TyLauncher Does */
 
-.tylauncher-does img {
+.main-features img {
   padding-bottom: 20px;
   max-width: 100%;
 }

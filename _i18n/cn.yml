@@ -1,0 +1,10 @@
+global:
+  english: English
+  download: 下载安装包
+  for-platform: 适用于
+  download-for-platform: 下载适用于
+  repository: 源码仓库
+  blog: 博客
+  description: '文件快捷启动工具.'
+  sub-description_before: 开源免费的文件管理工具. 由
+  sub-description_after: 用 <span class='mega-octicon octicon-heart'></span> 制作.

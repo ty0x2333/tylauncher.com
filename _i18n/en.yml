@@ -1,0 +1,10 @@
+global:
+  chinese: 中文
+  download: Download
+  for-platform: For
+  download-for-platform: Download for
+  repository: Repository
+  blog: Blog
+  description: 'A file quick launch tool.'
+  sub-description_before: Free open source file management tools. Made with <span class='mega-octicon octicon-heart'></span> by
+  sub-description_after: .
