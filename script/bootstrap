@@ -1,6 +1,5 @@
 #!/bin/sh
-# usage: script/server
+# usage: script/bootstrap
 #
-# Run the jekyll server
 
 bundle install
