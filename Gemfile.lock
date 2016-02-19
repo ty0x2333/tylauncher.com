@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/Anthony-Gaudino/jekyll-multiple-languages-plugin.git
+  revision: 05b4d4e0de0e5bf71483049849b08f8aa290d4a2
+  branch: v1_4_0
+  specs:
+    jekyll-multiple-languages-plugin (1.4.0)
+      colorator
+
 GEM
   remote: https://ruby.taobao.org/
   specs:
@@ -22,14 +30,14 @@ GEM
     ffi (1.9.10)
     ffi (1.9.10-x64-mingw32)
     gemoji (2.1.0)
-    github-pages (48)
+    github-pages (50)
       RedCloth (= 4.2.9)
-      github-pages-health-check (= 0.6.1)
+      github-pages-health-check (= 1.0.1)
       jekyll (= 3.0.3)
       jekyll-coffeescript (= 1.0.1)
-      jekyll-feed (= 0.3.1)
+      jekyll-feed (= 0.4.0)
       jekyll-gist (= 1.4.0)
-      jekyll-mentions (= 1.0.0)
+      jekyll-mentions (= 1.0.1)
       jekyll-paginate (= 1.1.0)
       jekyll-redirect-from (= 0.9.1)
       jekyll-sass-converter (= 1.3.0)
@@ -44,9 +52,10 @@ GEM
       redcarpet (= 3.3.3)
       rouge (= 1.10.1)
       terminal-table (~> 1.4)
-    github-pages-health-check (0.6.1)
+    github-pages-health-check (1.0.1)
       addressable (~> 2.3)
       net-dns (~> 0.8)
+      octokit (~> 4.0)
       public_suffix (~> 1.4)
       typhoeus (~> 0.7)
     html-pipeline (2.3.0)
@@ -64,11 +73,11 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-coffeescript (1.0.1)
       coffee-script (~> 2.2)
-    jekyll-feed (0.3.1)
+    jekyll-feed (0.4.0)
     jekyll-gist (1.4.0)
       octokit (~> 4.2)
-    jekyll-mentions (1.0.0)
-      html-pipeline (~> 2.2)
+    jekyll-mentions (1.0.1)
+      html-pipeline (~> 2.3)
       jekyll (~> 3.0)
     jekyll-paginate (1.1.0)
     jekyll-redirect-from (0.9.1)
@@ -128,6 +137,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-multiple-languages-plugin!
 
 BUNDLED WITH
    1.11.2
