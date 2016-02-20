@@ -5,7 +5,7 @@ rvm:
 install:
   - ./script/bootstrap
 script:
-  - JEKYLL_ENV=production jekyll serve --baseurl "" --detach && htmlproof ./_site --disable-external --empty-alt-ignore
+  - ./script/build-production && htmlproof ./_site --disable-external --empty-alt-ignore
 
 env:
   global:
