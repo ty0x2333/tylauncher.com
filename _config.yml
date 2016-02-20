@@ -20,3 +20,11 @@ languages: ["en", "cn"]
 
 gems:
   - jekyll/multiple/languages/plugin
+
+exclude:
+  - README_RES
+  - README.md
+  - LICENSE.md
+  - Gemfile
+  - Gemfile.lock
+  - script

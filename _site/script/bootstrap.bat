@@ -1,3 +1,0 @@
-@echo off
-
-bundle install
