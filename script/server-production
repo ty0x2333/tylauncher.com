@@ -1,0 +1,6 @@
+#!/bin/sh
+# usage: script/server-production
+#
+# Run the jekyll server
+
+JEKYLL_ENV=production bundle exec jekyll serve --baseurl '' --watch
