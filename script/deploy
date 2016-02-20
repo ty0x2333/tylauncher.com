@@ -1,4 +1,8 @@
 #!/bin/sh
-# usage: script/bootstrap
+# usage: script/deploy
 #
+# GitHub Page does not support local plugins.
+# deploy static website file to gh-pages.
+# more information, see: https://gist.github.com/cobyism/4730490
+
 git subtree push --prefix _site origin gh-pages
