@@ -1,0 +1,6 @@
+#!/bin/sh
+# usage: script/build-production
+#
+# Run the jekyll build
+
+JEKYLL_ENV=production bundle exec jekyll build
