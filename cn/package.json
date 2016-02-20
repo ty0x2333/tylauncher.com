@@ -1,0 +1,23 @@
+{
+  "name": "tylauncher.com",
+  "version": "1.0.0",
+  "description": "The [website](http://www.tylauncher.com) for [Tylauncher](https://github.com/luckytianyiyan/TyLauncher).",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luckytianyiyan/tylauncher.com.git"
+  },
+  "author": "luckytianyiyan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luckytianyiyan/tylauncher.com/issues"
+  },
+  "scripts": {
+    "releases": "script/releases"
+  },
+  "homepage": "http://www.tylauncher.com",
+  "dependencies": {
+    "tar-fs": "^1.5.0",
+    "request": "^2.55.0",
+    "yamljs": "^0.2.3"
+  }
+}

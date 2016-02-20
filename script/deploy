@@ -1,0 +1,4 @@
+#!/bin/sh
+# usage: script/bootstrap
+#
+git subtree push --prefix _site origin gh-pages
