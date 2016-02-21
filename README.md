@@ -1,6 +1,7 @@
 ![TyLauncher-logo](https://raw.githubusercontent.com/luckytianyiyan/tylauncher.com/master/README_RES/tylauncher-logo.png)
+
 [![GitHub License](https://img.shields.io/github/license/luckytianyiyan/tylauncher.com.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
-[![Build Status](https://travis-ci.org/luckytianyiyan/tylauncher.com.svg?branch=gh-pages)](https://travis-ci.org/luckytianyiyan/tylauncher.com)
+[![Build Status](https://travis-ci.org/luckytianyiyan/tylauncher.com.svg?branch=master)](https://travis-ci.org/luckytianyiyan/tylauncher.com.svg)
 
 The [website](http://www.tylauncher.com) for [TyLauncher](https://github.com/luckytianyiyan/TyLauncher).
 ### Build
